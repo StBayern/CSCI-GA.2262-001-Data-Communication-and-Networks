@@ -14,8 +14,8 @@ def user_register():
     json_object = {}
     host_name = request.args.get('hostname')
     ip_address = request.args.get('ip')
-    as_ip: request.args.get('as_ip'),
-    as_port: request.args.get('as_port')
+    as_ip = request.args.get('as_ip')
+    as_port = request.args.get('as_port')
     json_object['name'] = host_name
     json_object['address'] = ip_address
     json_object['as_ip'] = as_ip
